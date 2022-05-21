@@ -1,0 +1,7 @@
+substitutions:
+  devicename: greenhouse-grow-bag
+  fullname: Greenhouse Grow Bag
+  ip: 192.168.100.32
+  oneWireAddress: "0x14000005fb71bc28"
+
+<<: !include sensor.yaml
