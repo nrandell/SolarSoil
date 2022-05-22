@@ -1,0 +1,7 @@
+substitutions:
+  devicename: garden-grow-bag
+  fullname: Garden Grow Bag
+  ip: 192.168.100.33
+  oneWireAddress: "0x2e000005fabeb728"
+
+<<: !include sensor.yaml
