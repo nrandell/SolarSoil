@@ -73,12 +73,15 @@ network:
   enable_ipv6: false
 
 sensor:
-  # - platform: dallas
-  #   address: $oneWireAddress
-  #   name: ${fullname} Temperature
+  - platform: dallas
+    address: $oneWireAddress
+    name: ${fullname} Temperature
 
   - platform: uptime
     name: ${fullname} Uptime
+
+  - platform: wifi_signal
+    name: ${fullname} Wifi Signal
 
   - platform: adc
     pin: 39
@@ -97,6 +100,3 @@ sensor:
             return 100;
           }
           return (2.1 - x) / (2.1 - 0.5) * 100.0;
-
-  - platform: wifi_signal
-    name: ${fullname} Wifi Signal
